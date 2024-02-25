@@ -37,6 +37,17 @@ public class Main {
         } else {
             System.out.println(year + " Год не является високосным");
         }
+        //Task 4
+        int deliveryDistance = 95;
+        if (deliveryDistance <= 20) {
+            System.out.println("Доставка в течении суток");
+        } else if (deliveryDistance >20 && deliveryDistance <=60) {
+            System.out.println("Потребуется 2 дня");
+        } else if (deliveryDistance >60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется 3 дня");
+        } else {
+            System.out.println("Доставки нет");
+        }
 
     }
 }
