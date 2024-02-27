@@ -1,3 +1,5 @@
+import javax.naming.BinaryRefAddr;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -47,6 +49,25 @@ public class Main {
             System.out.println("Потребуется 3 дня");
         } else {
             System.out.println("Доставки нет");
+        }
+
+        //Task 4
+        int numbers = 12;
+        switch (numbers) {
+            case 1, 2, 12:
+                System.out.println(numbers + " месяц принадлежит к сезону зима");
+                break;
+            case 3, 4, 5:
+                System.out.println(numbers + " месяц принадлежит к сезону весна");
+                break;
+            case 6, 7, 8:
+                System.out.println(numbers + " месяц принадлежит к сезону лето");
+                break;
+            case 9, 10, 11:
+                System.out.println(numbers + " месяц принадлежит к сезону осень");
+                break;
+            default:
+                System.out.println("Ошибка");
         }
 
     }
