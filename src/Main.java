@@ -29,12 +29,12 @@ public class Main {
 
 
         //Task 3
-        int year = 2024;
-        if (year <= 1584){
+        int year = 1952;
+        if (year <= 1584) {
             System.out.println("В " + year + " году еще не было определения 'високосный год'");
-        } else if (year % 100 == 0) {
+        }else if (year % 100 == 0 && year % 400 != 0) {
             System.out.println(year + " Год не является високосным");
-        } else if (year % 4 == 0) {
+        } else if (year % 4 == 0 || year % 400 == 0) {
             System.out.println(year + " Год является високосным");
         } else {
             System.out.println(year + " Год не является високосным");
